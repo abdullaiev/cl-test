@@ -1,0 +1,20 @@
+nav {
+  position: relative;
+  background-color: #484439;
+}
+
+.go-back {
+  font-size: 36px;
+  padding: 3px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 15px 30px;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
+}

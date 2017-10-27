@@ -1,0 +1,14 @@
+<app-navbar [title]="title"></app-navbar>
+
+<section class="dashboard scrollable">
+    <div class="program"
+         *ngFor="let program of programs | async"
+         [routerLink]="['/details', program.guid]">
+        <figure>
+            <img [src]="program.icon_url" [alt]="program.title">
+            <figcaption>
+                {{program.title}}
+            </figcaption>
+        </figure>
+    </div>
+</section>

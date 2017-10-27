@@ -1,0 +1,14 @@
+body {
+  background-color: #333333;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  margin: 0;
+  overflow-y: hidden;
+}
+
+.scrollable {
+  box-sizing: border-box;
+  height: calc(100vh - 47px);
+  overflow-y: scroll;
+}

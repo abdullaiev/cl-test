@@ -1,0 +1,11 @@
+<nav>
+  <div class="go-back">
+    <i class="fa fa-angle-left"
+       aria-hidden="true"
+       *ngIf="backArrow"
+       (click)="goBack()">
+    </i>
+  </div>
+
+  <h1 *ngIf="title">{{title}}</h1>
+</nav>

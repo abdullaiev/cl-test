@@ -1,0 +1,27 @@
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.program {
+  width: 20vw;
+  padding: 20px;
+}
+
+.program figure {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.program img {
+  width: 90%;
+}
+
+.program figcaption {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 10px;
+}

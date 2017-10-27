@@ -1,0 +1,23 @@
+.program-details {
+  padding: 30px;
+}
+
+figure {
+  margin: 10px 0;
+  text-align: center;
+}
+
+figure img {
+  width: 25%;
+}
+
+.title {
+  font-size: 18px;
+  margin: 25px 0 2px;
+}
+
+.possible-earnings {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: 0;
+}
