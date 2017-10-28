@@ -1,9 +1,8 @@
 <nav>
-  <div class="go-back">
+  <div class="go-back" (click)="goBack()">
     <i class="fa fa-angle-left"
        aria-hidden="true"
-       *ngIf="backArrow"
-       (click)="goBack()">
+       *ngIf="backArrow">
     </i>
   </div>
 
