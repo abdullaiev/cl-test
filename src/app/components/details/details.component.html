@@ -1,29 +1,31 @@
 <div *ngIf="program">
-  <app-navbar [title]="program.title"
-              [backArrow]="true">
-  </app-navbar>
+    <app-navbar [title]="program.title"
+                [backArrow]="true">
+    </app-navbar>
 
-  <section class="program-details scrollable">
-    <figure>
-      <img [src]="program.icon_url" [alt]="program.title">
+    <section class="program-details scrollable">
+        <figure>
+            <img [src]="program.icon_url" [alt]="program.title">
 
-      <figcaption>
-        <p class="title">{{program.title}}</p>
-        <p class="possible-earnings">{{program.possible_earnings_description}}</p>
-      </figcaption>
-    </figure>
+            <figcaption>
+                <p class="title">{{program.title}}</p>
+                <p class="possible-earnings">{{program.possible_earnings_description}}</p>
+            </figcaption>
+        </figure>
 
-    <p>{{program.description}}</p>
-    <p>{{program.incentive_description}}</p>
+        <p>{{program.description}}</p>
+        <p>{{program.incentive_description}}</p>
 
-    <div *ngIf="(goals | async)?.length">
-      <p>Goals:</p>
+        <div *ngIf="(goals | async)?.length">
+            <p class="goals-title">Goals:</p>
 
-      <p *ngFor="let goal of goals | async">
-        {{goal.title}}. Value: {{goal.incentive_value | currency:'USD':true}}
-      </p>
+            <ol class="goals-list">
+                <li *ngFor="let goal of goals | async">
+                    {{goal.title}}. Value: {{goal.incentive_value | currency:'USD':true}}
+                </li>
+            </ol>
 
-      <p>Total incentive value: {{sum | currency:'USD':true}}</p>
-    </div>
-  </section>
+            <p>Total incentive value: {{sum | currency:'USD':true}}</p>
+        </div>
+    </section>
 </div>

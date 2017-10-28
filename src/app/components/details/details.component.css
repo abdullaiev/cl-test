@@ -21,3 +21,16 @@ figure img {
   font-weight: bolder;
   margin-top: 0;
 }
+
+.goals-title {
+  margin-bottom: 5px;
+}
+
+.goals-list {
+  margin-top: 0;
+}
+
+.goals-list li {
+  font-size: 14px;
+  padding: 8px 0;
+}
